@@ -23,8 +23,14 @@ For development purposes, you may set up the environment manually:
    cd xian_blockchain_agent
    pip3.11 install -e .
    ```
+3. Create .env file add the following content:
 
-3. Run the REST API service:
+   ```bash
+   OPENAI_API_KEY = "<your_openai_api_key>"
+   NODE = "https://node.xian.org"
+   ```
+
+4. Run the service:
 
    ```bash
    python3.11 service.py
